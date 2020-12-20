@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>HTML Website</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+	</script>
+</head>
+
+<body>
+	<a href="https://www.youtube.com/channel/UCZbw9R1zdS3Hh9qDJdHnusg?sub_confirmation=1" target="_blank" onclick="document.getElementById('alerttext').innerHTML='Thanks for subscribing!'">
+		<div class="alert alert-info alert-dismissible"><button type="button" class="close" data-dismiss="alert">×</button><span id="alerttext">Subscribe to Spot Sign!</span></div></a>
+  <img src="/images/pizza.png" class='pizza1' id="pizza">
+  <p class="pizza-text">Pizza is delicious!</p>
+  <p class="donut-text">Donuts are too!</p>
+  <img src="/images/donut.png" id="donut" class="donut1">
+  <button onclick="spinclick()" class="spinbtn">Toggle spin</button>
+  <br><button type="button" class="btn" onclick="btnClick('Basic')">Basic</button>
+  <button type="button" class="btn btn-primary" onclick="btnClick('Primary')">Primary</button>
+  <button type="button" class="btn btn-secondary" onclick="btnClick('Secondary')">Secondary</button>
+  <button type="button" class="btn btn-success" onclick="btnClick('Success')">Success</button>
+  <button type="button" class="btn btn-info" onclick="btnClick('Info')">Info</button>
+  <button type="button" class="btn btn-warning" onclick="btnClick('Warning')">Warning</button>
+  <button type="button" class="btn btn-danger" onclick="btnClick('Danger')">Danger</button>
+  <button type="button" class="btn btn-dark" onclick="btnClick('Dark')">Dark</button>
+  <button type="button" class="btn btn-light" onclick="btnClick('Light')">Light</button>
+  <button type="button" class="btn btn-link" onclick="btnClick('Link')">Link</button> 
+  <div class="container mt-3">
+  
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="collapse" data-target="#demo">Videos:</button>
+  <div id="demo" class="collapse">
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=u7kQILWVOho">Silkworms</a></li>
+    </ul>
+  </div>
+</div>
+    <p id="test"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
